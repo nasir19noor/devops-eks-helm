@@ -27,6 +27,4 @@ jobs:
         run: aws sts get-caller-identity
 
       - name: Deploy to AWS
-        run: |
-          # Your deployment commands here
-          # e.g., aws s3 sync ./build s3://my-bucket
+        run: aws s3 ls
